@@ -163,11 +163,11 @@ const HeroSection = () => {
 					</VStack>
 				</VStack>
 				<VStack textAlign="left" gap={4} mt={16}>
-					<Heading>Software design and engineering for all needs</Heading>
+					<Heading>Project Empower is created for the caregivers</Heading>
 					<Text align="left">
-						Customized development of digital products, Apps, Webs, AR,
-						BLockchain and much more, we are a multidisciplinary team suitable
-						for any piece of software.
+						We are a team of students from NUS Medicine, Pharmacy and
+						Psychiatry, working together to generate initiatives to improve the
+						wellbeing of caregivers.
 					</Text>
 					<SimpleGrid columns={{ sm: 1, md: 2 }}>
 						<Box
@@ -245,11 +245,11 @@ const HeroSection = () => {
 						</ChakraBox>
 					</SimpleGrid>
 				</VStack>
-				<VStack spacing={8} textAlign="left" mt={16}>
+				<VStack spacing={8} align="left" mt={16}>
 					<Heading textAlign="left">Who do we work with?</Heading>
 					<Text>
-						Continuous learning and improvement is what allows us to work with
-						the best, most innovative and robust technologies in the market.
+						Our partners are what allow us to continue doing what we doing;
+						continuing to serve the caregivers!
 					</Text>
 					<ChakraBox
 						display="flex"
