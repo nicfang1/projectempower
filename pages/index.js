@@ -209,16 +209,20 @@ const HeroSection = () => {
 										scale: 1.1,
 									}}
 								>
-									<Button
-										borderRadius="full"
-										h={8}
-										minW={8}
-										fontSize="sm"
-										p={0}
-										bg={initiative.icons.bgColor}
-									>
-										{initiative.icons.icon}
-									</Button>
+									{initiative.icons.map((i, index) => (
+										<Button
+											borderRadius="full"
+											h={8}
+											minW={8}
+											fontSize="sm"
+											p={0}
+											bg={i.bgColor}
+											key={index}
+										>
+											{i.icon}
+										</Button>
+									))}
+
 									<Text fontWeight="semibold">{initiative.heading}</Text>
 								</ChakraBox>
 							))}
