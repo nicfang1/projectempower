@@ -41,37 +41,6 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
 	);
 };
 
-const initiatives = [
-	{
-		heading: "Caregiver Relief Service",
-		desc: "Volunteers would perform simple activities (e.g. cleaning, purchasing groceries) to allow these caregivers to have personal time off for themselves.",
-		bgColorLight: "orange.200",
-		bgColorDark: "orange.500",
-		icons: <FaHandsHelping />,
-	},
-	{
-		heading: "Public Awareness Events",
-		desc: "Such as Run to Empower which welcomed all NUS students to take part to show support towards the unsung heroes in the lives of patients.",
-		icons: <MdPublic />,
-		bgColorLight: "green.200",
-		bgColorDark: "green.500",
-	},
-	{
-		heading: "Video Interview",
-		desc: "This will consist of a series of interviews with caregivers, patients, healthcare professionals and the public to understand the role that caregivers play in our healthcare landscape",
-		icons: <AiFillVideoCamera />,
-		bgColorLight: "purple.200",
-		bgColorDark: "purple.500",
-	},
-	{
-		heading: "Research",
-		desc: "Our review of the exisiting literature in Singapore has revealed that there is little understanding of the caregiver ecosystem. Through research, we aim to have a better understanding of caregivers in Singapore and generate new solutions to improve their wellbeing.",
-		icons: <SiPubmed />,
-		bgColorLight: "blue.200",
-		bgColorDark: "blue.500",
-	},
-];
-
 const ChakraBox = chakra(motion.div, {
 	shouldForwardProp: (prop) => isValidMotionProp(prop) || prop === "children",
 });
@@ -94,6 +63,52 @@ const item = {
 };
 
 const HeroSection = () => {
+	const initiatives = [
+		{
+			heading: "Caregiver Relief Service",
+			desc: "Volunteers would perform simple activities (e.g. cleaning, purchasing groceries) to allow these caregivers to have personal time off for themselves.",
+			icons: [
+				{
+					icon: <FaHandsHelping key="1" />,
+					bgColor: useColorModeValue("orange.200", "orange.500"),
+				},
+			],
+		},
+		{
+			heading: "Public Awareness Events",
+			desc: "Such as Run to Empower which welcomed all NUS students to take part to show support towards the unsung heroes in the lives of patients.",
+			icons: [
+				{
+					icon: <MdPublic key="1" />,
+					bgColor: useColorModeValue("green.200", "green.500"),
+				},
+			],
+		},
+		{
+			heading: "Video Interview",
+			desc: "This will consist of a series of interviews with caregivers, patients, healthcare professionals and the public to understand the role that caregivers play in our healthcare landscape",
+			icons: [
+				{
+					icon: <AiFillVideoCamera key="1" />,
+					bgColor: useColorModeValue("purple.200", "purple.500"),
+				},
+			],
+		},
+		{
+			heading: "Research",
+			desc: "Our review of the exisiting literature in Singapore has revealed that there is little understanding of the caregiver ecosystem. Through research, we aim to have a better understanding of caregivers in Singapore and generate new solutions to improve their wellbeing.",
+			icons: [
+				// {
+				// 	icon: <FaResearchgate />,
+				// 	bgColor: useColorModeValue("cyan.200", "cyan.500"),
+				// },
+				{
+					icon: <SiPubmed />,
+					bgColor: useColorModeValue("blue.200", "blue.500"),
+				},
+			],
+		},
+	];
 	return (
 		<Layout>
 			<Container
@@ -200,12 +215,9 @@ const HeroSection = () => {
 										minW={8}
 										fontSize="sm"
 										p={0}
-										bg={useColorModeValue(
-											initiative.bgColorLight,
-											initiative.bgColorDark
-										)}
+										bg={initiative.icons.bgColor}
 									>
-										{initiative.icons}
+										{initiative.icons.icon}
 									</Button>
 									<Text fontWeight="semibold">{initiative.heading}</Text>
 								</ChakraBox>
