@@ -18,7 +18,7 @@ import NextImage from "next/image";
 import { motion, isValidMotionProp } from "framer-motion";
 import Layout from "../components/layouts/article";
 import NextLink from "next/link";
-import { FaHandsHelping, FaResearchgate } from "react-icons/fa";
+import { FaHandsHelping } from "react-icons/fa";
 import { MdPublic } from "react-icons/md";
 import { AiFillVideoCamera } from "react-icons/ai";
 import { SiPubmed } from "react-icons/si";
@@ -98,10 +98,6 @@ const HeroSection = () => {
 			heading: "Research",
 			desc: "Our review of the exisiting literature in Singapore has revealed that there is little understanding of the caregiver ecosystem. Through research, we aim to have a better understanding of caregivers in Singapore and generate new solutions to improve their wellbeing.",
 			icons: [
-				// {
-				// 	icon: <FaResearchgate />,
-				// 	bgColor: useColorModeValue("cyan.200", "cyan.500"),
-				// },
 				{
 					icon: <SiPubmed />,
 					bgColor: useColorModeValue("blue.200", "blue.500"),
@@ -127,9 +123,6 @@ const HeroSection = () => {
 							rotate: ["0deg", "1.5deg", "3deg", "1.5deg", "0deg"],
 							translateX: ["0%", "1%", "2%", "1%", "0%"],
 							translateY: ["0%", "1%", "2%", "1%", "0%"],
-							// rotate: "3deg",
-							// translateX: "2%",
-							// translateY: "2%",
 						}}
 						transition={{
 							duration: 2,
@@ -162,9 +155,9 @@ const HeroSection = () => {
 						</Button>
 					</VStack>
 				</VStack>
-				<VStack textAlign="left" gap={4} mt={16}>
+				<VStack align="left" gap={4} mt={16}>
 					<Heading>Project Empower is created for the caregivers</Heading>
-					<Text align="left">
+					<Text>
 						We are a team of students from NUS Medicine, Pharmacy and
 						Psychiatry, working together to generate initiatives to improve the
 						wellbeing of caregivers.
