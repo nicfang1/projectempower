@@ -8,7 +8,7 @@ const variants = {
 	exit: { opacity: 0, x: -0, y: 20 },
 };
 
-const Layout = ({ children, title }) => (
+const Layout = ({ children, title, desc }) => (
 	<motion.article
 		initial="hidden"
 		animate="enter"
@@ -23,6 +23,8 @@ const Layout = ({ children, title }) => (
 					<title> Project Empower | {title}</title>
 					<meta name="twitter:title" content={title} />
 					<meta property="og:title" content={title} />
+					<meta name="description" content={desc} key="desc" />
+					<meta property="og:description" content={desc} />
 				</Head>
 			)}
 			{children}

@@ -15,7 +15,7 @@ import Layout from "../components/layouts/article";
 
 const About = () => {
 	return (
-		<Layout>
+		<Layout title="About">
 			<Container
 				maxW="container.md"
 				display="flex"

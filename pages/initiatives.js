@@ -111,7 +111,7 @@ const Initiatives = () => {
 		},
 	];
 	return (
-		<Layout>
+		<Layout title="Initiatives">
 			<Container
 				maxW="container.md"
 				display="flex"
