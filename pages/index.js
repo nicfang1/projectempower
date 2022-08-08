@@ -110,6 +110,7 @@ const HeroSection = () => {
 		<Layout
 			title="Home"
 			desc="A local community service project created for caregivers by students from NUS Medicine, Pharmacy and Pyschology. Find out more about our history, our vision, our mission and our initiatives"
+			keywords="Caregiver, Empower, NUS, Medicine, Project"
 		>
 			<Container
 				maxW="container.md"

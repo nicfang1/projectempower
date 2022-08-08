@@ -15,7 +15,11 @@ import Layout from "../components/layouts/article";
 
 const About = () => {
 	return (
-		<Layout title="About">
+		<Layout
+			title="About"
+			desc="Founded in January 2022, Project Empower is the only community involvement project under Yong Loo Lin School of Medicine that targets the caregivers."
+			keywords="Empower, Yong Loo Lin School of Medicine, Medicine, NUS, YLL, Caregiver"
+		>
 			<Container
 				maxW="container.md"
 				display="flex"

@@ -8,7 +8,7 @@ const variants = {
 	exit: { opacity: 0, x: -0, y: 20 },
 };
 
-const Layout = ({ children, title, desc }) => (
+const Layout = ({ children, title, desc, keywords }) => (
 	<motion.article
 		initial="hidden"
 		animate="enter"
@@ -24,6 +24,7 @@ const Layout = ({ children, title, desc }) => (
 					<meta name="twitter:title" content={title} />
 					<meta property="og:title" content={title} />
 					<meta name="description" content={desc} key="desc" />
+					<meta name="keywords" content={keywords} />
 					<meta property="og:description" content={desc} />
 				</Head>
 			)}

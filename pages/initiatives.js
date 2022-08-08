@@ -111,7 +111,11 @@ const Initiatives = () => {
 		},
 	];
 	return (
-		<Layout title="Initiatives">
+		<Layout
+			title="Initiatives"
+			desc="Our 4 initiatives: Caregiver Relief Service, Public Awareness events, Video interviews and research aims to improve the wellbeing of caregivers, better undertand their needs and wantds and to raise awareness on their importance in our healthcare system"
+			keywords="Caregiver, Relief, Service, Awareness, Research"
+		>
 			<Container
 				maxW="container.md"
 				display="flex"
