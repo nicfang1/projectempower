@@ -259,31 +259,31 @@ const HeroSection = () => {
 							<NextImage
 								src="/partners/caringsg logo.png"
 								alt="CaringSG"
-								height={96}
+								height={90}
 								width={150}
 							/>
 						</ChakraBox>
 						<ChakraBox variants={item}>
 							<NextImage
-								src="/partners/HCA Logo.png"
+								src="/partners/HCA_Logo.png"
 								alt="HCA"
-								height={96}
+								height={90}
 								width={100}
 							/>
 						</ChakraBox>
 						<ChakraBox variants={item}>
 							<NextImage
-								src="/partners/med soc.png"
+								src="/partners/med_soc.png"
 								alt="Med Soc"
-								height={96}
+								height={90}
 								width={120}
 							/>
 						</ChakraBox>
 						<ChakraBox variants={item}>
 							<NextImage
-								src="/partners/NUS Logo.png"
+								src="/partners/NUS_Logo.png"
 								alt="NUS"
-								height={96}
+								height={90}
 								width={150}
 							/>
 						</ChakraBox>

@@ -53,7 +53,7 @@ const Footer = () => {
 							minW={8}
 							p={0}
 							as={LinkItem}
-							href="#"
+							href="https://www.instagram.com/projempower/"
 						>
 							<BsInstagram />
 						</Button>
@@ -69,7 +69,8 @@ const Footer = () => {
 							minW={8}
 							p={0}
 							as={LinkItem}
-							href="#"
+							href="https://www.facebook.com/nusprojectempower 
+							"
 						>
 							<BsFacebook />
 						</Button>
@@ -85,7 +86,7 @@ const Footer = () => {
 							minW={8}
 							p={0}
 							as={LinkItem}
-							href="#"
+							href="https://www.linkedin.com/company/projectempower/"
 						>
 							<BsLinkedin height="1em" width="1em" />
 						</Button>
