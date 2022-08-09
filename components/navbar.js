@@ -108,18 +108,18 @@ const Navbar = (props) => {
 								aria-label="Options"
 							/>
 							<MenuList p={2} minW="3xs">
-								<NextLink href="/about" passHref>
-									<MenuItem as={Link}>About</MenuItem>
-								</NextLink>
-								<NextLink href="/initiatives" passHref>
-									<MenuItem as={Link}>Initiatives</MenuItem>
-								</NextLink>
+								<MenuItem as={LinkItem} href="/about">
+									About
+								</MenuItem>
+								<MenuItem as={LinkItem} href="/initiatives">
+									Initiatives
+								</MenuItem>
 								<MenuItem>
 									<Divider my="0.5rem" opacity="0.6" />
 								</MenuItem>
 								<MenuItem
 									as={Button}
-									bg={useColorModeValue("purple.500", "purple.200")}
+									bg={useColorModeValue("green.500", "green.200")}
 									color={useColorModeValue("white", "gray.800")}
 								>
 									Something in Mind?

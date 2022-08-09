@@ -8,22 +8,12 @@ if (typeof window !== "undefined") {
 	window.history.scrollRestoration = "manual";
 }
 
-// <!-- Google tag (gtag.js) -->
-// <script async src="https://www.googletagmanager.com/gtag/js?id=G-SLWZM1N3JJ"></script>
-// <script>
-//   window.dataLayer = window.dataLayer || [];
-//   function gtag(){dataLayer.push(arguments);}
-//   gtag('js', new Date());
-
-//   gtag('config', 'G-SLWZM1N3JJ');
-// </script>
-
 function Website({ Component, pageProps, router }) {
 	return (
 		<>
 			<Script
 				strategy="lazyOnload"
-				src="https://www.googletagmanager.com/gtag/js?id=G-XDZ8ZZ3T3K"
+				src={`'https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}'`}
 			/>
 
 			<Script strategy="lazyOnload" id="gtag-init">
@@ -31,7 +21,7 @@ function Website({ Component, pageProps, router }) {
 				  function gtag(){dataLayer.push(arguments);}
 				  gtag('js', new Date());
 				
-				  gtag('config', 'G-XDZ8ZZ3T3K');
+				  gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');
 				  
 			`}
 			</Script>
