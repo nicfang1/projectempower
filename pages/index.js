@@ -139,6 +139,7 @@ const HeroSection = () => {
 							alt="doodle"
 							width={400}
 							height={400}
+							priority
 						/>
 					</ChakraBox>
 					<VStack gap={4} textAlign="center">

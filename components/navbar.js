@@ -114,7 +114,7 @@ const Navbar = (props) => {
 								<MenuItem as={LinkItem} href="/initiatives">
 									Initiatives
 								</MenuItem>
-								<MenuItem>
+								<MenuItem bg="none">
 									<Divider my="0.5rem" opacity="0.6" />
 								</MenuItem>
 								<MenuItem
