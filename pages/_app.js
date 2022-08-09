@@ -20,7 +20,7 @@ if (typeof window !== "undefined") {
 
 function Website({ Component, pageProps, router }) {
 	return (
-		<Chakra cookies={pageProps.cookies}>
+		<>
 			<Script
 				strategy="lazyOnload"
 				src="https://www.googletagmanager.com/gtag/js?id=G-XDZ8ZZ3T3K"
@@ -35,21 +35,23 @@ function Website({ Component, pageProps, router }) {
 				  
 			`}
 			</Script>
-			<Fonts />
-			<Layout router={router}>
-				<AnimatePresence
-					exitBeforeEnter
-					initial={true}
-					onExitComplete={() => {
-						if (typeof window !== "undefined") {
-							window.scrollTo({ top: 0 });
-						}
-					}}
-				>
-					<Component {...pageProps} key={router.route} />
-				</AnimatePresence>
-			</Layout>
-		</Chakra>
+			<Chakra cookies={pageProps.cookies}>
+				<Fonts />
+				<Layout router={router}>
+					<AnimatePresence
+						exitBeforeEnter
+						initial={true}
+						onExitComplete={() => {
+							if (typeof window !== "undefined") {
+								window.scrollTo({ top: 0 });
+							}
+						}}
+					>
+						<Component {...pageProps} key={router.route} />
+					</AnimatePresence>
+				</Layout>
+			</Chakra>
+		</>
 	);
 }
 
