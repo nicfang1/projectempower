@@ -23,7 +23,7 @@ function Website({ Component, pageProps, router }) {
 		<Chakra cookies={pageProps.cookies}>
 			<Script
 				strategy="lazyOnload"
-				src="https://www.googletagmanager.com/gtag/js?id=G-SLWZM1N3JJ"
+				src="https://www.googletagmanager.com/gtag/js?id=G-XDZ8ZZ3T3K"
 			/>
 
 			<Script strategy="lazyOnload" id="gtag-init">
@@ -31,7 +31,7 @@ function Website({ Component, pageProps, router }) {
 				  function gtag(){dataLayer.push(arguments);}
 				  gtag('js', new Date());
 				
-				  gtag('config', 'G-SLWZM1N3JJ');
+				  gtag('config', 'G-XDZ8ZZ3T3K');
 				  
 			`}
 			</Script>
