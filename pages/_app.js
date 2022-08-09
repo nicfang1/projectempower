@@ -8,27 +8,33 @@ if (typeof window !== "undefined") {
 	window.history.scrollRestoration = "manual";
 }
 
+// <!-- Google tag (gtag.js) -->
+// <script async src="https://www.googletagmanager.com/gtag/js?id=G-SLWZM1N3JJ"></script>
+// <script>
+//   window.dataLayer = window.dataLayer || [];
+//   function gtag(){dataLayer.push(arguments);}
+//   gtag('js', new Date());
+
+//   gtag('config', 'G-SLWZM1N3JJ');
+// </script>
+
 function Website({ Component, pageProps, router }) {
 	return (
 		<Chakra cookies={pageProps.cookies}>
 			<Script
-				strategy="afterInteractive"
-				src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
+				strategy="lazyOnload"
+				src="https://www.googletagmanager.com/gtag/js?id=G-SLWZM1N3JJ"
 			/>
-			<Script
-				id="gtag-init"
-				strategy="afterInteractive"
-				dangerouslySetInnerHTML={{
-					__html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${gtag.GA_TRACKING_ID}', {
-              page_path: window.location.pathname,
-            });
-          `,
-				}}
-			/>
+
+			<Script strategy="lazyOnload" id="gtag-init">
+				{`window.dataLayer = window.dataLayer || [];
+				  function gtag(){dataLayer.push(arguments);}
+				  gtag('js', new Date());
+				
+				  gtag('config', 'G-SLWZM1N3JJ');
+				  
+			`}
+			</Script>
 			<Fonts />
 			<Layout router={router}>
 				<AnimatePresence

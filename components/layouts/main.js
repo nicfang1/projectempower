@@ -2,6 +2,7 @@ import Head from "next/head";
 import NavBar from "../navbar";
 import { Box, Container } from "@chakra-ui/react";
 import Footer from "../footer";
+import Script from "next/script";
 
 const Main = ({ children, router }) => {
 	return (
