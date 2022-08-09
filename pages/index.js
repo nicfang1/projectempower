@@ -287,7 +287,7 @@ const HeroSection = () => {
 						</ChakraBox>
 						<ChakraBox variants={item}>
 							<NextImage
-								src="/partners/NUS_Logo.png"
+								src="/partners/NUS_logo.png"
 								alt="NUS"
 								height={90}
 								width={150}
