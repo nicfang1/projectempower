@@ -114,9 +114,7 @@ const Navbar = (props) => {
 								<MenuItem as={LinkItem} href="/initiatives">
 									Initiatives
 								</MenuItem>
-								<MenuItem>
-									<Divider my="0.5rem" opacity="0.6" />
-								</MenuItem>
+								<Divider my="0.5rem" opacity="0.6" />
 								<MenuItem
 									as={Button}
 									bg={useColorModeValue("green.500", "green.200")}
